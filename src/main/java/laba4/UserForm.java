@@ -25,6 +25,32 @@ public class UserForm extends HttpServlet {
 		v2 = request.getParameter("v2_c");
 		ves = request.getParameter("ves_c");
 		upak1 = request.getParameter("upak");
+		
+		c0 = request.getParameter("c0");
+		p21 = request.getParameter("promo");
+		x = request.getParameter("gruz");
+		if (x != null){
+            x="500";
+        }else {
+        	x="0";
+        }
+		y = request.getParameter("document");
+		if (y != null){
+            y="300";
+        }else {
+        	y="0";
+        }
+		
+		request.setAttribute("stoim", results);
+		request.setAttribute("v2_c", v2);
+		request.setAttribute("ves_c", ves);
+		request.setAttribute("c0", c0);
+		request.setAttribute("promo", p21);
+		request.setAttribute("gruz", x);
+		request.setAttribute("document", y);
+		
+		System.out.println(results);
+		request.getRequestDispatcher("/userForm.jsp").forward(request, response);
 	}
 
 }
