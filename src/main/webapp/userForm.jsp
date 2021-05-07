@@ -126,7 +126,7 @@ function adm() {
 		
 			<label class="label__calc" for="label6">Способ упаковки:
         		<select name="upak" class="disign__select" id="upak" value="${upak}" tabindex="5" required>
-					<option selected="selected" disabled>Выберите способ</option>
+					<option selected disabled value="">Выберите способ</option>
 					<option value="1">Не требуется</option>
 					<option value="2">Жесткая</option>
 					<option value="3">Мягкая</option>
@@ -139,7 +139,7 @@ function adm() {
 			</label>
 		
 			<label class="label__calc" for="label8">Промокод:
-        		<input class="input__calc" colspan="3" align = "right" type="text" name="promo" id="promo" value="${promo}" placeholder="Введите промокод" tabindex="7" maxlength="10" onchange="localStorage.promo=this.setItem('promo')" ><p></p>
+        		<input class="input__calc" colspan="3" align = "right" type="text" name="promo" id="promo" value="${promo}" placeholder="Введите промокод" tabindex="7" maxlength="10"><p></p>
         		<p class="check__promo">${checkprom}</p>
 			</label>
 		

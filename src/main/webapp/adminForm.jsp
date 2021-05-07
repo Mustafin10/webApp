@@ -9,9 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="resources/css/style.css">
-<title>Результат сложения</title>
+<title>Окно администратора</title>
 </head>
 <body>
+
 <header class="header__admin">
         <div class="container">
             <div class="header__inner__admin">
@@ -52,6 +53,16 @@
             </div>
         </div>
     </div>
+ <script src="resources/css/script.js">
+ </script>
+ <script>
+//восстанавливаем запомненное значение, если есть
 
+ if(localStorage.theme == 'dark') {
+ themes.href="resources/css/dark-mode.css";
+ }else{
+ themes.href="resources/css/light-mode.css";
+ }
+ </script>
 </body>
 </html>
