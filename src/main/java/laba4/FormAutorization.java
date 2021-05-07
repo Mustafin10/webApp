@@ -30,7 +30,7 @@ public class FormAutorization extends HttpServlet {
 			rs.forward(request, response);
 			check=2;
 			}else {
-			request.setAttribute("answer", "Не удаётся войти. Пожалуйста, проверьте правильность написания логина и пароля.");
+			request.setAttribute("answer", "РќРµ СѓРґР°С‘С‚СЃСЏ РІРѕР№С‚Рё. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїСЂРѕРІРµСЂСЊС‚Рµ РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ РЅР°РїРёСЃР°РЅРёСЏ Р»РѕРіРёРЅР° Рё РїР°СЂРѕР»СЏ.");
 			request.getRequestDispatcher("/formAutorization.jsp").forward(request, response);
 		}
 		
