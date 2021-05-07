@@ -36,40 +36,18 @@ public class FormAutorization extends HttpServlet {
 		
 	}
 	
-	private static class RequestCalc {
-		private final String first_calc;
-		private final String second_calc;
-		private int result;
-						
-		private RequestCalc (String first, String second) {
-			this.first_calc = first;
-			this.second_calc = second;
+	private static class RequestAccount {
+		
+		private RequestAccount (String login, String password) {
+			login_c = login;
+			password_c = password;
 			}
 		
-		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
-			return new RequestCalc(
-			request.getParameter("first"),
-			request.getParameter("second"));
-			}
-				
-		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
-			request.setAttribute("first_result", first_calc);
-			request.setAttribute("second_result", second_calc);
-			int first_try;
-			int second_try;
-			try { 
-			first_try=Integer.parseInt(first_calc);
-			second_try=Integer.parseInt(second_calc);
-			}
-			catch (NumberFormatException e) {
-				first_try=0;
-				second_try=0;	
-			}
-			
-			result=first_try+second_try;
-			request.setAttribute("result", result);
-		}
-		
+		public static RequestAccount fromRequestParameters(HttpServletRequest request) {
+			return new RequestAccount(
+			request.getParameter("login"),
+			request.getParameter("password"));
+			}			
 	}
 	
 	
