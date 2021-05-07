@@ -36,5 +36,15 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Иван/.m2/repository/com/itextpdf/itextpdf/5.5.10/itextpdf-5.5.10.jar" sourcepath="C:/Users/Иван/.m2/repository/com/itextpdf/itextpdf/5.5.10/itextpdf-5.5.10-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="itextpdf-5.5.10.jar"/>
+			<attribute name="maven.groupId" value="com.itextpdf"/>
+			<attribute name="maven.artifactId" value="itextpdf"/>
+			<attribute name="maven.version" value="5.5.10"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
