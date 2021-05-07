@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+	width: 100%;
+    height: 100vh;
+	background: url("../images/intro.jpg") center no-repeat;
+    background-size: cover;
+    margin: 0;
+    transition: background 1s linear;
+    
+}
+
+.wrapper{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper__user{
+  	padding-top: 10px;
+    width: 100%;
+    height: 150px;
+    line-height: 1;
+    margin-left: 25pc;
+}
+  
