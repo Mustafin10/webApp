@@ -4,6 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="resources/css/light-mode.css" id="themes">
+<link rel="stylesheet" href="resources/css/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="resources/css/style.css">
 <title>Результат сложения</title>
 </head>
 <body>
