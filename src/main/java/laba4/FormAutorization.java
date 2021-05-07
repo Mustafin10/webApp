@@ -1,21 +1,38 @@
 package laba4;
 
-import java.io.IOException;
+import java.io.*;
 
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 
-@WebServlet(name="FormAutorization", urlPatterns="/FormAutorization") //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ URL
+@WebServlet(name="FormAutorization", urlPatterns="/FormAutorization")
 public class FormAutorization extends HttpServlet {
 
+	public static String login_c;
+	public static  String password_c;
+	public static double result;
+	public static int check;
+	
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
-		Calc.setAsRequestAttributesAndCalculate(request);
-		 
-		request.getRequestDispatcher("/Results.jsp").forward(request, response);
+		response.setContentType("text/html;charset=UTF-8");
+		
+		RequestAccount Account = RequestAccount.fromRequestParameters(request);
+		
+		if(login_c.equals("admin")&(password_c.equals("555"))) {
+			RequestDispatcher rs = request.getRequestDispatcher("/adminForm.jsp");
+			rs.forward(request, response);
+		check=1;
+		}
+		if(login_c.equals("user")&(password_c.equals("123"))) {
+			RequestDispatcher rs = request.getRequestDispatcher("/userForm.jsp");
+			rs.forward(request, response);
+			check=2;
+			}else {
+			request.setAttribute("answer", "Не удаётся войти. Пожалуйста, проверьте правильность написания логина и пароля.");
+			request.getRequestDispatcher("/formAutorization.jsp").forward(request, response);
+		}
 		
 	}
 	
