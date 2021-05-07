@@ -1,0 +1,1304 @@
+@charset "UTF-8";
+
+
+/*Smartphones (portrait)*/
+@media screen and (max-width : 1124px) {
+	
+/*________________________Body________________________*/	
+	body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    
+    line-height: 1.6;
+    color: #FFF;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    
+}
+        
+    
+/*________________________Autorization and Registration Forms________________________*/
+    
+    /*________________________Header________________________*/
+	.header__autoreg{
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;   
+}
+
+
+	.header__inner__autoreg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+    .header__logo__autoreg {
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 2%;
+    color: #fff;
+}
+    
+   
+   /*________________________Intro________________________*/
+	.intro__autoreg{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+	.intro__inner__autoreg{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+    
+    .intro__title__autoreg {
+    padding-top: 20pc;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+    
+
+    /*________________________Container________________________*/
+	.container__autoreg{
+    width: 120%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+	}
+	
+	
+    .contfront__autoreg{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 5px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    }
+    
+    
+    
+     /*________________________Label,Input,Text________________________*/
+    
+   .label__autoreg{
+    text-align: left;
+    font-size: 27px;
+    font-style: bold;
+}
+   
+   
+    .input__autoreg{
+    font-size: 24px;
+    height: 3pc;
+    width: 18pc;
+    float: right;
+    }
+    
+    .error__auto{
+    font-size: 14px;
+    color: #fff;
+}
+
+  
+	/*________________________Buttons________________________*/
+	.btn__login{
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 18px;
+    background: #5181b8;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 3px;
+        border: none;
+    margin: 0 auto;
+}
+
+	.btn__reg{
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 18px;
+    color: #fff;
+    background: #4bb34b;
+    font-size: 30px;
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto;
+}    
+
+
+
+
+
+/*________________________Calculation Form________________________*/
+
+
+	 /*________________________Header________________________*/
+	.header__calc{
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;   
+}
+
+
+	.header__inner__calc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+    .header__logo__calc{
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 2%;
+    color: #fff;
+}
+    
+    
+    /*________________________Navigation Panel________________________*/
+    
+    .nav {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+	.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    font-size: 21px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+	.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    background-color: #fcec64;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity .1s linear;
+}
+
+	.nav__link:hover{
+    color: #fcec64;
+}
+
+	.nav__link:hover:after{
+    opacity: 1;
+}
+
+   
+   /*________________________Intro________________________*/
+	.intro__calc{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+	.intro__inner__calc{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+    
+    .intro__title__calc{
+    padding-top: 5pc;
+    padding-bottom: 2pc;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+    
+
+    /*________________________Container________________________*/
+	.container__calc{
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+	}
+	
+    
+     /*________________________Label,Input,Text________________________*/
+    
+   .label__calc{
+    text-align: left;
+    font-size: 27px;
+    font-style: bold;
+}
+   
+   
+    .input__calc{
+    font-size: 20px;
+    width: 20pc;
+    height: 40px;
+    float: right;
+    }
+    
+    .disign__stoim {
+    text-align: left;
+    font-style: bold;
+    font-size: 27px;
+    color: lightgreen;
+}
+     .disign__select{
+    font-size: 25px;
+    float: right;
+    width: 20pc;
+    height: 40px;
+    }
+    
+    
+     .disign__checkbox{
+    float: right;
+    width: 25px;
+    height: 35px;
+    }
+    
+    
+    .info__inner__calc{
+    font-size: 14px;
+    text-align: center;  
+}
+
+	.check__promo{
+
+    font-size: 12px;
+    color: #fff;
+
+}
+
+	
+
+	/*________________________Buttons________________________*/
+
+	.btn {
+    display: flex;
+    margin: auto;
+    vertical-align: top;
+    padding: 10px 15px;
+    font-size: 35px;
+    border-radius: 30px;
+    background: #fc6a42;
+    border: none;
+} 
+  
+    
+/*________________________Information Form________________________*/
+	
+	 /*________________________Header________________________*/
+	.header__info{
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;   
+}
+
+
+	.header__inner__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+    .header__logo__info{
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 2%;
+    color: #fff;
+}
+    
+    
+    /*________________________Navigation Panel________________________*/
+    
+    .nav__info{
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+	.nav__link__info{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 28px;
+    margin: 0 10px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+	.nav__link__info:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    background-color: #fcec64;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity .1s linear;
+}
+
+	.nav__link__info:hover{
+    color: #fcec64;
+}
+
+	.nav__link__info:hover:after{
+    opacity: 1;
+}
+
+   
+   /*________________________Intro________________________*/
+	.intro__info{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+	.intro__inner__info{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+    
+    .intro__title__info{
+    padding-top: 10pc;
+    padding-bottom: 2pc;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+	.intro__text__info{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+}
+    
+
+    /*________________________Container________________________*/
+	.container__info{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+	}
+
+
+
+
+/*________________________Administation Form________________________*/ 
+
+	 /*________________________Header________________________*/
+	.header__admin{
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;   
+}
+
+
+	.header__inner__admin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+    .header__logo__admin{
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 2%;
+    color: #fff;
+}
+    
+    
+    /*________________________Navigation Panel________________________*/
+    
+    .nav__admin {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+	.nav__link__admin{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    font-size: 25px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+	.nav__link__admin:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    background-color: #fcec64;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity .1s linear;
+}
+
+	.nav__link__admin:hover{
+    color: #fcec64;
+}
+
+	.nav__link__admin:hover:after{
+    opacity: 1;
+}
+
+   
+   /*________________________Intro________________________*/
+	.intro__admin{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+	.intro__inner__admin{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+    
+    .intro__title__admin{
+    padding-top: 10pc;
+    padding-bottom: 2pc;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+    
+
+    /*________________________Container________________________*/
+	.container__admin{
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+	}
+	
+    
+     /*________________________Label,Input,Text,Img________________________*/
+    
+	.label{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 50px;
+    position: relative;
+    height: 3pc;
+    width: 7pc;
+    
+}
+
+	.label__admin{
+	text-align: left;
+    font-size: 27px;
+    font-style: bold;
+	}
+   
+   
+    .input__admin{
+    font-size: 20px;
+    width: 19pc;
+    height: 40px;
+    float: right;
+    }
+    
+    
+    .radio__admin{
+    float: right;
+    width: 3pc;
+    height: 29px;
+    }
+    
+    
+    .img__moon__admin{
+    height: 40px;
+    width: 50px;
+}
+
+	.img__sun__admin{
+    height: 40px;
+    width: 50px;
+}
+
+
+	.ball{
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: 3px;
+    left: 5px;
+    height: 43px;
+    width: 43px;
+    
+}
+    
+
+	/*________________________Buttons________________________*/
+
+	.btn__admin {
+    display: flex;
+    margin: auto;
+    vertical-align: top;
+    padding: 10px 15px;
+    font-size: 35px;
+    border-radius: 30px;
+    background: #fc6a42;
+    border: none;
+} 
+  
+
+	.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+	.checkbox:checked + .label .ball {
+    transform: translateX(60px);
+}
+
+
+
+
+
+}
+
+/*Desktops and laptops */
+@media screen and (min-width : 1124px) {
+/*________________________Body________________________*/	
+	body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    
+    line-height: 1.6;
+    color: #FFF;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    
+}
+        
+    
+/*________________________Autorization and Registration Forms________________________*/
+    
+    /*________________________Header________________________*/
+	.header__autoreg{
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;   
+}
+
+
+	.header__inner__autoreg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+    .header__logo__autoreg {
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 2%;
+    color: #fff;
+}
+    
+   
+   /*________________________Intro________________________*/
+	.intro__autoreg{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+	.intro__inner__autoreg{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+    
+    .intro__title__autoreg {
+    padding-top: 8pc;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+    
+
+    /*________________________Container________________________*/
+	.container__autoreg{
+    width: 120%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+	}
+	
+	
+    .contfront__autoreg{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 5px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    }
+    
+    
+    
+     /*________________________Label,Input,Text________________________*/
+    
+   .label__autoreg{
+    text-align: left;
+    font-size: 25px;
+    font-style: bold;
+}
+   
+   
+    .input__autoreg{
+    font-size: 21px;
+    height: 42px;
+    width: 18pc;
+    float: right;
+    }
+    
+    .error__auto{
+    font-size: 14px;
+    color: #fff;
+}
+
+  
+	/*________________________Buttons________________________*/
+	.btn__login{
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 8px;
+    background: #5181b8;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    margin: 0 auto;
+}
+
+	.btn__reg{
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 8px;
+    color: #fff;
+    background: #4bb34b;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto;
+}    
+
+
+
+
+
+/*________________________Calculation Form________________________*/
+
+
+	 /*________________________Header________________________*/
+	.header__calc{
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;   
+}
+
+
+	.header__inner__calc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+    .header__logo__calc{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 2%;
+    color: #fff;
+}
+    
+    
+    /*________________________Navigation Panel________________________*/
+    
+    .nav {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+	.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    font-size: 15px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+	.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    background-color: #fcec64;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity .1s linear;
+}
+
+	.nav__link:hover{
+    color: #fcec64;
+}
+
+	.nav__link:hover:after{
+    opacity: 1;
+}
+
+   
+   /*________________________Intro________________________*/
+	.intro__calc{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+	.intro__inner__calc{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+    
+    .intro__title__calc{
+    padding-top: 1pc;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+    
+
+    /*________________________Container________________________*/
+	.container__calc{
+    width: 75%;
+    max-width: 420px;
+    margin: 0 auto;
+    
+	}
+	
+    
+     /*________________________Label,Input,Text________________________*/
+    
+   .label__calc{
+    text-align: left;
+    font-size: 14px;
+    font-style: bold;
+}
+   
+   
+    .input__calc{
+    font-size: 15px;
+    width: 15pc;
+    height: 22px;
+    float: right;
+    }
+    
+    .disign__stoim {
+    text-align: left;
+    font-size: 14px;
+    color: lightgreen;
+}
+     .disign__select{
+    font-size: 15px;
+    float: right;
+    width: 15pc;
+    height: 22px;
+    }
+    
+    
+     .disign__checkbox{
+    float: right;
+    width: 14px;
+    height: 14px;
+    }
+    
+    
+    .info__inner__calc{
+    font-size: 14px;
+    text-align: center;  
+}
+
+
+	.check__promo{
+
+    font-size: 12px;
+    color: #fff;
+
+}
+
+
+	/*________________________Buttons________________________*/
+
+	.btn {
+    display: flex;
+    margin: auto;
+    vertical-align: top;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 30px;
+    background: #4bb34b;
+    border: none;
+} 
+  
+    
+/*________________________Information Form________________________*/
+	
+	 /*________________________Header________________________*/
+	.header__info{
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;   
+}
+
+
+	.header__inner__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+    .header__logo__info{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 2%;
+    color: #fff;
+}
+    
+    
+    /*________________________Navigation Panel________________________*/
+    
+    .nav__info{
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+	.nav__link__info{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    margin: 0 10px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+	.nav__link__info:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    background-color: #fcec64;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity .1s linear;
+}
+
+	.nav__link__info:hover{
+    color: #fcec64;
+}
+
+	.nav__link__info:hover:after{
+    opacity: 1;
+}
+
+   
+   /*________________________Intro________________________*/
+	.intro__info{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+	.intro__inner__info{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+    
+    .intro__title__info{
+    padding-top: 1pc;
+    padding-bottom: 2pc;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+	.intro__text__info{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+    
+
+    /*________________________Container________________________*/
+	.container__info{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+	}
+
+
+
+
+/*________________________Administation Form________________________*/ 
+
+	 /*________________________Header________________________*/
+	.header__admin{
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;   
+}
+
+
+	.header__inner__admin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+    .header__logo__admin{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 2%;
+    color: #fff;
+}
+    
+    
+    /*________________________Navigation Panel________________________*/
+    
+    .nav {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+	.nav__link__admin{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    font-size: 15px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+	.nav__link__admin:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    background-color: #fcec64;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity .1s linear;
+}
+
+	.nav__link__admin:hover{
+    color: #fcec64;
+}
+
+	.nav__link__admin:hover:after{
+    opacity: 1;
+}
+
+   
+   /*________________________Intro________________________*/
+	.intro__admin{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+	.intro__inner__admin{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+    
+    .intro__title__admin{
+    padding-top: 3pc;
+    padding-bottom: 2pc;
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+    
+
+    /*________________________Container________________________*/
+	.container__admin{
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+	}
+	
+    
+     /*________________________Label,Input,Text,Img________________________*/
+    
+	.label{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 50px;
+    position: relative;
+    height: 38px;
+    width: 6pc;
+    
+}
+
+	.label__admin{
+	text-align: left;
+    font-size: 20px;
+	}
+   
+   
+    .input__admin{
+    font-size: 15px;
+    width: 16pc;
+    height: 31px;
+    float: right;
+    }
+    
+    
+    .radio__admin{
+    float: right;
+    width: 2pc;
+    height: 20px;
+    }
+    
+    
+    .img__moon__admin{
+    height: 27px;
+    width: 36px;
+}
+
+	.img__sun__admin{
+    height: 30px;
+    width: 40px;
+}
+
+
+	.ball{
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    left: 5px;
+    height: 35px;
+    width: 35px;
+    
+}
+    
+
+	/*________________________Buttons________________________*/
+
+	.btn__admin {
+    display: flex;
+    margin: auto;
+    vertical-align: top;
+    padding: 10px 15px;
+    font-size: 35px;
+    border-radius: 30px;
+    background: #fc6a42;
+    border: none;
+} 
+  
+
+	.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+	.checkbox:checked + .label .ball {
+    transform: translateX(52px);
+}
+
+
+.settings-option {
+padding: .5em 1em;
+border-radius: 5px;
+display: flex;
+align-items: center; }
+
+.theme-toggler__checkbox {
+opacity: 0;
+position: absolute;
+right: 30px;
+top: 25%;
+z-index: 1; }
+
+.theme-toggler__label {
+font-weight: normal;
+font-size: 1.2em;
+display: inline-block;
+vertical-align: middle;
+flex: 1;
+margin-right: 2em;
+color:#35394b;
+}
+
+.theme-toggler__switch {
+width: 50px;
+height: 25px;
+border-radius: 1em;
+position: relative;
+cursor: pointer;
+background: #eee;
+border: 2px solid #ddd;
+transition: all .1s linear;
+display: inline-block;
+vertical-align: middle;
+
+}
+
+.theme-toggler__switch::after {
+content: "";
+position: absolute;
+width: 21px;
+height: 21px;
+margin-top: 0px;
+margin-left: 1px;
+border-radius: 1em;
+background: #fff;
+border: 1px solid #eee;
+box-shadow: 2px 5px 10px -2px rgba(0, 0, 0, 0.2);
+transition: all .1s linear; }
+
+.theme-toggler__checkbox:focus + .theme-toggler__switch {
+box-shadow: 0 0 0 5px #fff, 0 0 0 7px orange;
+outline: 3px solid transparent; }
+
+.theme-toggler__checkbox:focus:not(:focus-visible) + .theme-toggler__switch {
+box-shadow: none; }
+
+.theme-toggler__checkbox:checked + .theme-toggler__switch {
+background: #76D672;
+border-color: #76D672; }
+
+.theme-toggler__checkbox:checked + .theme-toggler__switch::after {
+transform: translatex(22px);
+transition: transform .1s linear;
+border-color: #fff; }
+}
