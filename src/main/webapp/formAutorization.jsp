@@ -21,6 +21,7 @@
                     <input class="btn__login" type="submit" name="sign" value="Войти">
                     <input class="btn__reg" type="submit" name="reg" value="Регистрация" onclick="location.href='regForm.jsp'">
                     <p class="error__auto">${answer}</p>
+                    
                 </div>
 			</form> 
     </body>
