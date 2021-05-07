@@ -1,7 +1,6 @@
 package laba4;
 
 import java.io.IOException;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(name="UserForm", urlPatterns="/UserForm")
 public class UserForm extends HttpServlet {
+	
 	protected static String ves;
 	protected static String v2;
 	protected static String c0;
@@ -19,6 +19,7 @@ public class UserForm extends HttpServlet {
 	protected static String x;
 	protected static String y;
 	protected static int results;
+
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		gorod = request.getParameter("city");
@@ -41,6 +42,8 @@ public class UserForm extends HttpServlet {
         	y="0";
         }
 		
+		
+		results=Rasschet.calcul();
 		request.setAttribute("stoim", results);
 		request.setAttribute("v2_c", v2);
 		request.setAttribute("ves_c", ves);
@@ -52,5 +55,5 @@ public class UserForm extends HttpServlet {
 		System.out.println(results);
 		request.getRequestDispatcher("/userForm.jsp").forward(request, response);
 	}
-
 }
+
