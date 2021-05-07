@@ -36,7 +36,7 @@
     	  	        <!--pattern="(^[1-9](\d*)?([.]\d+)?)|(^0[.](\d*)?(?=[1-9])\d+)"-->
                     <p></p>
                     <input class="btn__login" type="submit" name="sign" value="Войти">
-                    <input class="btn__reg" type="submit" name="reg" value="Регистрация" onclick="location.href='regForm.jsp'">
+                    <!--<input class="btn__reg" type="submit" name="reg" value="Регистрация" onclick="location.href='regForm.jsp'">-->
                     <p class="error__auto">${answer}</p>
                 </div>
              </form>  
