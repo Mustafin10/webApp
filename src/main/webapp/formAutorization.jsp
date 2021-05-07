@@ -7,13 +7,13 @@
 <title>Добро пожаловать | Калькулятор автотранспортных перевозок</title>
 </head>
 <body>
-<h1>Калькулятор - сложение целых чисел</h1>>
-    <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
-        <label for="first">Первое слагаемое:</label>
-        <input type="text" name="first" id="first" value="${first}">
-        <label for="second">Второе слагаемое: </label>
-        <input type="text" name="second" id="second" value="${second}">
-        <input type="submit" name="sign" value="Calculate">
+<h1>Авторизация/h1>>
+    <form action="FormAutorization" method="post">
+        <label for="login">Логин:</label>
+        <input type="text" name="login" id="login" value="${login}">
+        <label for="password">Пароль: </label>
+        <input type="password" name="password" id="password" value="${password}">
+        <input type="submit" name="sign" value="Войти">
     </form>
     </body>
 </html>
