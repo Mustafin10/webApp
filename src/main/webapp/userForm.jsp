@@ -17,6 +17,7 @@
         height: auto;
         padding: 0px 10px;
 		display: none;
+		color: #111;
         border: 4px solid #fff;
         position: absolute;
         top: auto;
