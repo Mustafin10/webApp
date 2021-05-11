@@ -20,18 +20,19 @@ public class FormAutorization extends HttpServlet {
 		
 		RequestAccount Account = RequestAccount.fromRequestParameters(request);
 		
+		//Проверка введенных пользователем данных(авторизация)
 		if(login_c.equals("admin")&(password_c.equals("555"))) {
 			RequestDispatcher rs = request.getRequestDispatcher("/adminForm.jsp");
-			rs.forward(request, response);
+			rs.forward(request, response); //переход в окно администратора
 		check=1;
 		}
 		if(login_c.equals("user")&(password_c.equals("123"))) {
-			RequestDispatcher rs = request.getRequestDispatcher("/userForm.jsp");
-			rs.forward(request, response);
+			RequestDispatcher rs = request.getRequestDispatcher("/userForm.jsp"); 
+			rs.forward(request, response); //переход в окно с калькулятором
 			check=2;
 			}else {
 			request.setAttribute("answer", "Не удаётся войти. Пожалуйста, проверьте правильность написания логина и пароля.");
-			request.getRequestDispatcher("/formAutorization.jsp").forward(request, response);
+			request.getRequestDispatcher("/formAutorization.jsp").forward(request, response); //переход в окно авторизации
 		}
 		
 	}
@@ -39,14 +40,14 @@ public class FormAutorization extends HttpServlet {
 	private static class RequestAccount {
 		
 		private RequestAccount (String login, String password) {
-			login_c = login;
-			password_c = password;
+			login_c = login; 
+			password_c = password; 
 			}
 		
 		public static RequestAccount fromRequestParameters(HttpServletRequest request) {
 			return new RequestAccount(
-			request.getParameter("login"),
-			request.getParameter("password"));
+			request.getParameter("login"), //получение значений из поля "логин" в окне авторизации
+			request.getParameter("password")); //получение значений из поля "пароль" в окне авторизации
 			}			
 	}
 	
