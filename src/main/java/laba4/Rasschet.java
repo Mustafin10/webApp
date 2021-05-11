@@ -1,13 +1,14 @@
 package laba4;
 
-public class Rasschet {
+public class Rasschet extends Calc{
 	
 	protected static int c;
 	protected static int cdu;
 	protected static double p;
 	protected static String kod;
 	
-	protected static int calcul () {
+	@Override
+	public int calcul() {
 		
 		int v = Integer.parseInt(UserForm.v2);
 		int g = 0;
