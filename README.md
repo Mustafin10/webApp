@@ -9,4 +9,4 @@
 
 Мустафин Даниил Эдуардович
 #
-# Travic-ci: [![Build Status](https://travis-ci.com/Mustafin10/webApp.svg?branch=master)](https://travis-ci.com/Mustafin10/webApp)
+# Travis-ci: [![Build Status](https://travis-ci.com/Mustafin10/webApp.svg?branch=master)](https://travis-ci.com/Mustafin10/webApp)
