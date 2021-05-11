@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name="UserForm", urlPatterns="/UserForm")
 public class UserForm extends HttpServlet {
 	
+	//объявление переменных
 	protected static String ves;
 	protected static String v2;
 	protected static String c0;
@@ -22,14 +23,14 @@ public class UserForm extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		gorod = request.getParameter("city");
-		v2 = request.getParameter("v2_c");
-		ves = request.getParameter("ves_c");
-		upak1 = request.getParameter("upak");
+		gorod = request.getParameter("city"); //получение значения выбранного города в окне калькулятора
+		v2 = request.getParameter("v2_c"); //получение значения введеного в поле объем в окне калькулятора
+		ves = request.getParameter("ves_c"); //получение значения введеного в поле вес в окне калькулятора
+		upak1 = request.getParameter("upak"); //получение значения выбранной упаковки в окне калькулятора
 		
-		c0 = request.getParameter("c0");
-		p21 = request.getParameter("promo");
-		x = request.getParameter("gruz");
+		c0 = request.getParameter("c0"); //получение значения введеного в поле объявленная стоимость в окне калькулятора
+		p21 = request.getParameter("promo"); //получение значения введеного в поле промокод в окне калькулятора
+		x = request.getParameter("gruz"); //получение значения выбранной кнопки(radio) в окне калькулятора
 		if (x != null){
             x="500";
         }else {
@@ -44,7 +45,8 @@ public class UserForm extends HttpServlet {
 		
 		
 		results=Rasschet.calcul();
-		request.setAttribute("stoim", results);
+		//возврат значения в поле, нужно для того, чтобы при перезагрузке сайте, значения не пропадали
+		request.setAttribute("stoim", results); 
 		request.setAttribute("v2_c", v2);
 		request.setAttribute("ves_c", ves);
 		request.setAttribute("c0", c0);
@@ -53,7 +55,7 @@ public class UserForm extends HttpServlet {
 		request.setAttribute("document", y);
 		
 		System.out.println(results);
-		request.getRequestDispatcher("/userForm.jsp").forward(request, response);
+		request.getRequestDispatcher("/userForm.jsp").forward(request, response); //перезагрузка страницы
 	}
 }
 
