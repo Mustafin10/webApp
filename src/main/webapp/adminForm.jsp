@@ -43,9 +43,9 @@
 
 		       		<p class="label__admin"><b>Дополнительные услуги:</b></p>
      	        	<p><label class="label__admin" id="func">
-     	        	<input class="radio__admin" name="services" id="services1" type="radio"  value= "on" checked onchange="localStorage.setItem('services',1)">Включить</p> 
+     	        	<input class="radio__admin theme-toggler-dop" name="services" id="services1" type="radio"  value= "on" checked onchange="localStorage.setItem('services',1)">Включить</p> 
 		        	<p><label class="label__admin" id="func">
-		        	<input class="radio__admin" name="services" id="services2" type="radio"   value= "off" onchange="localStorage.setItem('services',0)">Выключить</p>
+		        	<input class="radio__admin theme-toggler-dop1" name="services" id="services2" type="radio"   value= "off" onchange="localStorage.setItem('services',0)">Выключить</p>
 
 		        	<input class="btn__login" type="submit" name="save_settings" value="Сохранить"> 
 		        </form>
