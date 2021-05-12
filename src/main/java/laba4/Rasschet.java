@@ -17,7 +17,7 @@ public class Rasschet {
 		int cdu = Integer.parseInt(UserForm.x) + Integer.parseInt(UserForm.y);
 		int cupk = RasschetUpak.upak();
 		String pom = UserForm.p21;
-		Sting gt = AdminForm.gt;
+		String gt = AdminForm.gt;
 		
 		if (pom.equals("2020")) {
 			p = 0.92;
