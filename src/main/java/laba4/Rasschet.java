@@ -17,10 +17,13 @@ public class Rasschet {
 		int cdu = Integer.parseInt(UserForm.x) + Integer.parseInt(UserForm.y);
 		int cupk = RasschetUpak.upak();
 		String pom = UserForm.p21;
+		Sting gt = AdminForm.gt;
 		
 		if (pom.equals("2020")) {
 			p = 0.92;
 			kod="1";
+		} else if (pom.equals(gt)){
+			p = 0.9;
 		}
 		else {
 			p = 1;
