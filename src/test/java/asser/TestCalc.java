@@ -1,0 +1,14 @@
+package asser;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestCalc {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
