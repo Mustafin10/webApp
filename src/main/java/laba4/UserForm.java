@@ -14,12 +14,12 @@ public class UserForm extends HttpServlet {
 	protected static String ves;
 	protected static String v2;
 	protected static String c0;
-	protected static String p21;
-	protected static String gorod;
+	public static String p21;
+	public static String gorod;
 	protected static String upak1;
 	protected static String x;
 	protected static String y;
-	protected static int results;
+	public static int results;
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
