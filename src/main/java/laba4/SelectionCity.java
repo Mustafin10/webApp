@@ -1,7 +1,7 @@
 package laba4;
 
 public class SelectionCity {
-protected static double s=0;
+public static double s=0;
 	
 	protected static double gorod() {
 		
