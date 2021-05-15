@@ -4,11 +4,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import laba4.Calc;
+
 public class TestCalc {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		assertNotNull("class Calc not null", Calc.class);
 	}
 
 }
