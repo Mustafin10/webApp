@@ -11,7 +11,8 @@ public class TestRasschet {
 
 	@Test
 	public void test() {
-		Assert.assertNotNull(Rasschet.c);
+		assertNotNull(Rasschet.c); //проверка на не путстоту переменной с
+		assertNotNull(Rasschet.cdu);//проверка на не путстоту переменной cdu
 	}
 
 }

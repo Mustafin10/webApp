@@ -3,7 +3,7 @@ package laba4;
 public class Rasschet {
 	
 	public static int c;
-	protected static int cdu;
+	public static int cdu;
 	protected static double p;
 	protected static String kod;
 	
