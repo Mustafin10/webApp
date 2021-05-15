@@ -2,3 +2,6 @@ eclipse.preferences.version=1
 encoding//src/main/java/laba4=UTF-8
 encoding//src/main/java/laba4/FormAutorization.java=UTF-8
 encoding//src/main/webapp/formAutorization.jsp=UTF-8
+encoding//src/test/java/asser/TestCalc.java=UTF-8
+encoding//src/test/java/asser/TestRasschet.java=UTF-8
+encoding//src/test/java/asser/TestUserForm.java=UTF-8

@@ -18,9 +18,9 @@ public class TestUserForm {
 		String p21 = UserForm.p21;
 		String gorod = UserForm.gorod;
 		
-		assertSame(testint,results); //проверка переменной results, что она является типом int
+		assertSame(testint,results); //РїСЂРѕРІРµСЂРєР° РїРµСЂРµРјРµРЅРЅРѕР№ results, С‡С‚Рѕ РѕРЅР° СЏРІР»СЏРµС‚СЃСЏ С‚РёРїРѕРј int
 		
-		assertSame(teststring,p21,gorod); //проверка переменных p21 и gorod на принадлежность к типу String
+		assertSame(teststring,p21,gorod); //РїСЂРѕРІРµСЂРєР° РїРµСЂРµРјРµРЅРЅС‹С… p21 Рё gorod РЅР° РїСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚СЊ Рє С‚РёРїСѓ String
 	}
 
 }
