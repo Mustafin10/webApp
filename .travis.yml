@@ -2,3 +2,8 @@ language: java
 script:
 - mvn clean package
 
+deploy:
+  provider: heroku
+  api_key: 5160174b-d791-4403-bd45-aeee55d84330
+  app:
+    master: webApp
