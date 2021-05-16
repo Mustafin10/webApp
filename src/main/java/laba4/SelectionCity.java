@@ -3,7 +3,7 @@ package laba4;
 public class SelectionCity {
 public static double s=0;
 	
-	protected static double gorod() {
+	public static double gorod() {
 		
 		String gorod = UserForm.gorod;
 		
