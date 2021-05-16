@@ -4,6 +4,6 @@ script:
 
 deploy:
   provider: heroku
-  api_key: 5160174b-d791-4403-bd45-aeee55d84330
+  api_key: 9105e7a7-6606-4f07-8c98-cef907936619
   app:
     master: webApp
