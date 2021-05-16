@@ -1,3 +1,9 @@
 language: java
 script:
-- mvn clean package
+-mvn clean package
+deploy:
+  provider: heroku
+  api_key:
+    secure: "HRtdJ6kXtpDeNQRY9fggZjNxPyuM4pH+0swAb9by1V44o6BDjm3RXJ47tqWizA+HR/koOO8BqL3/n75PaVY4vjL1gIgIOHutM4dvCMAdikNI/LWwQbkn2w5xruOtJvgBC/pe0xyX4yK/pk+rF6Xg2grWb2pB2dzgh9FWP2TqGXgtG08bQvJ65X8qTLp/ef8RfCh5yvffV94kqjSDg8yF3/waf41vauxNpiq7lmlKnLFvbLt/HFcqQmVHGoYAzqnGuoFyzecdeXUIVac9hI8qi2e69qj96ltOIQh+3g0QFOTTp8retqTc9ZZ1/ft7rezADjdqM2BoDjycNAN9ergkv+EFaMsp2MBlG82tnMHNn9IgSlj0s5eWRGW9wtifhBuvJOyP5p9jjUdtQflQRXKSjZQarF064DC6Mc5T4Pa2/lzjNWIDl1t01pebM1s7fsBoLWCQEUoPiRSgqsfDHcjYNCWO5dzePKjv8gGJK9Bugq/b03g/SkDVKxQTgYa1Fk6j9fcBpoqwy949LGVUR/HzPq1zXCx5B1joLrCt6OFUxVN4I/o8icdq7y+Zwuza4IlJpELR3TX43BwNSPxYGmwJUFbqYTzj7IWu1O2H6cdZBFudg2RjR0/xwEyjZAJ0FRix9ba+WzsTYcMO7NuAv/oG1CNYkaqJL4smDhpKkBqFdEs="
+  app:
+    master: webApp
